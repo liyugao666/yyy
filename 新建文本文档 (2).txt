@@ -1,0 +1,269 @@
+[
+    {
+        "permission_name": "首页",
+        "permission_route": "../index.html",
+        "permission_pid": "1,110",
+        "pid": null
+    },
+    {
+        "permission_name": "店面管理",
+        "permission_route": "../dianmian/list.html",
+        "permission_pid": "1,10",
+        "pid": null
+    },
+    {
+        "permission_name": "店面管理/添加门店",
+        "permission_route": "",
+        "permission_pid": "1,11",
+        "pid": 10
+    },
+    {
+        "permission_name": "店面管理/编辑",
+        "permission_route": null,
+        "permission_pid": "1,12",
+        "pid": 10
+    },
+    {
+        "permission_name": "店面管理/删除",
+        "permission_route": null,
+        "permission_pid": "1,13",
+        "pid": 10
+    },
+    {
+        "permission_name": "人员管理",
+        "permission_route": "../yonghu/list.html",
+        "permission_pid": "1,20",
+        "pid": null
+    },
+    {
+        "permission_name": "人员管理/添加人员",
+        "permission_route": null,
+        "permission_pid": "1,21",
+        "pid": 20
+    },
+{
+        "permission_name": "店面管理/编辑",
+        "permission_route": null,
+        "permission_pid": "1,12",
+        "pid": 10
+    },
+    {
+        "permission_name": "店面管理/删除",
+        "permission_route": null,
+        "permission_pid": "1,13",
+        "pid": 10
+    },
+    {
+        "permission_name": "人员管理/编辑",
+        "permission_route": null,
+        "permission_pid": "1,22",
+        "pid": 20
+    },
+    {
+        "permission_name": "人员管理/删除",
+        "permission_route": null,
+        "permission_pid": "1,23",
+        "pid": 20
+    },
+    {
+        "permission_name": "权限管理",
+        "permission_route": "../quanxian/list.html",
+        "permission_pid": "1,30",
+        "pid": null
+    },
+    {
+        "permission_name": "权限管理/添加权限",
+        "permission_route": null,
+        "permission_pid": "1,31",
+        "pid": 30
+    },
+    {
+        "permission_name": "机台管理",
+        "permission_route": "../jitai/list.html",
+        "permission_pid": "1,40",
+        "pid": null
+    },
+    {
+        "permission_name": "机台管理/添加机台",
+        "permission_route": null,
+        "permission_pid": "1,41",
+        "pid": 40
+    },
+    {
+        "permission_name": "机台管理/添加机台类型",
+        "permission_route": null,
+        "permission_pid": "1,42",
+        "pid": 40
+    },
+    {
+        "permission_name": "机台管理/编辑机台",
+        "permission_route": null,
+        "permission_pid": "1,43",
+        "pid": 40
+    },
+    {
+        "permission_name": "机台管理/删除机台",
+        "permission_route": null,
+        "permission_pid": "1,44",
+        "pid": 40
+    },
+    {
+        "permission_name": "机台审核",
+        "permission_route": "../jitaishenhe/list.html",
+        "permission_pid": "1,50",
+        "pid": null
+    },
+    {
+        "permission_name": "机台审核/提交审核",
+        "permission_route": null,
+        "permission_pid": "1,51",
+        "pid": 50
+    },
+    {
+        "permission_name": "机台记录",
+        "permission_route": "../jitaijilu/list.html",
+        "permission_pid": "1,60",
+        "pid": null
+    },
+    {
+        "permission_name": "机台记录/通过",
+        "permission_route": null,
+        "permission_pid": "1,61",
+        "pid": 60
+    },
+    {
+        "permission_name": "机台记录/不通过",
+        "permission_route": null,
+        "permission_pid": "1,62",
+        "pid": 60
+    },
+    {
+        "permission_name": "礼物管理",
+        "permission_route": "../liwu/list.html",
+        "permission_pid": "1,70",
+        "pid": null
+    },
+    {
+        "permission_name": "礼物管理/添加礼物",
+        "permission_route": null,
+        "permission_pid": "1,71",
+        "pid": 70
+    },
+    {
+        "permission_name": "礼物兑换记录",
+        "permission_route": "../liwuduihuan/list.html",
+        "permission_pid": "1,80",
+        "pid": null
+    },
+    {
+        "permission_name": "礼物兑换记录/添加",
+        "permission_route": null,
+        "permission_pid": "1,81",
+        "pid": 80
+    },
+    {
+        "permission_name": "统计",
+        "permission_route": "../tongji/list.html",
+        "permission_pid": "1,90",
+        "pid": null
+    },
+    {
+        "permission_name": "操作记录",
+        "permission_route": "../caozuojilu/list.html",
+        "permission_pid": "1,100",
+        "pid": null
+    }
+]
+我的数组这样，
+要使用js方法转成这样
+[
+ {
+        "permission_name": "首页",
+        "permission_route": "../index.html",
+        "permission_pid": "1,110",
+        "pid": null
+    },
+    {
+        "permission_name": "店面管理",
+        "permission_route": "../dianmian/list.html",
+        "permission_pid": "1,10",
+        "pid": null,
+         children:[
+	{
+        "permission_name": "店面管理/添加门店",
+        "permission_route": "",
+        "permission_pid": "1,11",
+        "pid": 10
+    },
+  {
+        "permission_name": "店面管理/编辑",
+        "permission_route": null,
+        "permission_pid": "1,12",
+        "pid": 10
+    },
+{permission_name: '店面管理/删除', permission_route: null, permission_pid: '1,13', pid: 10}
+
+]
+    },
+{
+permission_name: '人员管理', permission_route: '../yonghu/list.html', permission_pid: '1,20', pid: null,
+ children:[
+	
+{permission_name: '人员管理/添加人员', permission_route: null, permission_pid: '1,21', pid: 20},.
+{permission_name: '人员管理/编辑', permission_route: null, permission_pid: '1,22', pid: 20},
+{permission_name: '人员管理/删除', permission_route: null, permission_pid: '1,23', pid: 20}
+]
+},
+{
+permission_name: '权限管理', permission_route: '../quanxian/list.html', permission_pid: '1,30', pid: null,
+ children:[
+	
+{permission_name: '权限管理/添加权限', permission_route: null, permission_pid: '1,31', pid: 30}
+]
+},
+
+{permission_name: '机台管理', permission_route: '../jitai/list.html', permission_pid: '1,40', pid: null,
+	 children:[
+	
+{permission_name: '机台管理/添加机台', permission_route: null, permission_pid: '1,41', pid: 40},
+{permission_name: '机台管理/添加机台类型', permission_route: null, permission_pid: '1,42', pid: 40},
+ 
+{permission_name: '机台管理/编辑机台', permission_route: null, permission_pid: '1,43', pid: 40},
+ 
+{permission_name: '机台管理/删除机台', permission_route: null, permission_pid: '1,44', pid: 40}
+]
+},
+{permission_name: '机台审核', permission_route: '../jitaishenhe/list.html', permission_pid: '1,50', pid: null,
+ children:[
+
+{permission_name: '机台审核/提交审核', permission_route: null, permission_pid: '1,51', pid: 50},
+
+	]
+},
+ 
+{permission_name: '机台记录', permission_route: '../jitaijilu/list.html', permission_pid: '1,60', pid: null,
+	 children:[
+	 
+{permission_name: '机台记录/通过', permission_route: null, permission_pid: '1,61', pid: 60},
+{permission_name: '机台记录/不通过', permission_route: null, permission_pid: '1,62', pid: 60}
+
+]
+},
+
+{permission_name: '礼物管理', permission_route: '../liwu/list.html', permission_pid: '1,70', pid: null,
+ children:[
+	
+{permission_name: '礼物管理/添加礼物', permission_route: null, permission_pid: '1,71', pid: 70}
+]
+},
+
+{permission_name: '礼物兑换记录', permission_route: '../liwuduihuan/list.html', permission_pid: '1,80', pid: null,
+	 children:[
+	
+{permission_name: '礼物兑换记录/添加', permission_route: null, permission_pid: '1,81', pid: 80}
+]
+},
+
+{permission_name: '统计', permission_route: '../tongji/list.html', permission_pid: '1,90', pid: null},
+{permission_name: '操作记录', permission_route: '../caozuojilu/list.html', permission_pid: '1,100', pid: null}
+]
